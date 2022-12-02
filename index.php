@@ -1,42 +1,24 @@
 <?php require("blocks/header.php"); ?>
     
     <main>
+        <h1>Hello</h1>
+        <?php
+            define('DB_HOST', 'std-1971.ist.mospolytech.ru'); //Адрес
+            define('DB_USER', 'std'); //Имя пользователя
+            define('DB_PASSWORD', 'root1234'); //Пароль
+            define('DB_NAME', 'std_1971_lab5'); //Имя БД
+            $mysql = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+            echo $mysqli->host_info;
+         
+
+            $result = mysqli_query($mysql, "SELECT * FROM `images`");
+            echo $result;
+        ?>
+
         <div class="content">
-            <div class="text">
-                <h1>Природа</h1>
-                <h2>Природа выдержит самый тщательный осмотр.
-                    Она предлагает нам взглянуть на ее самый маленький лист и взглянуть на ее равнину, как на насекомое.</h2>
-
-                <h2>Наши цели:</h2>
-                <il>
-                    <?php
-                        $array = array('Показать красоту', 'Показать важность', 'Привлечь внимание к глобальным проблемам');
-                        
-                        foreach ($array as $i) {
-                            echo '<li>'.$i.'</li>';
-                        }
-                    ?>
-                    <!-- <li>Показать красоту</li>
-                    <li>Показать важность</li>
-                    <li id="last">Привлечь внимание к глобальным проблемам</li> -->
-
-                </il>
-                <p class="learn_more-p">
-                    <a class="learn_more" href="#">Узнать больше</a>
-                </p>
-                
-            </div>
-            <div>
-                <?php 
-                    if(date('s') % 2 === 0)
-                        $name='1'; 
-                    else
-                        $name='2';
-
-                    echo '<img id="img_nature" src="img/img_'.$name.'.jpg" alt="Меняющаяся фотография">';    
-                ?>
-                
-            </div>
+            <img src="img/img_1.JPG" alt="1">
+            <img src="img/img_2.JPG" alt="2">
+            <img src="img/back.jpg" alt="3">
         </div>
         
     </main>

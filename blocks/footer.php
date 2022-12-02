@@ -3,7 +3,7 @@
                 <nav class="nav">
                     <p>Сформированно 
                         <?php
-                            echo date('m.d.y в H:i:s'); 
+                            echo date('d.m.y в H:i:s'); 
                         ?>
                     </p>
                     <a class="nav__link" href="#">Главная</a>
