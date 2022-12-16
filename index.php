@@ -16,6 +16,7 @@
                             echo '<li>'.$i.'</li>';
                         }
                     ?>
+                
                     <!-- <li>Показать красоту</li>
                     <li>Показать важность</li>
                     <li id="last">Привлечь внимание к глобальным проблемам</li> -->
@@ -33,7 +34,7 @@
                     else
                         $name='2';
 
-                    echo '<img id="img_nature" src="img/img_'.$name.'.jpg" alt="Меняющаяся фотография">';    
+                    echo '<img id="img_nature" src="img/img_'.$name.'.JPG" alt="Меняющаяся фотография">';    
                 ?>
                 
             </div>

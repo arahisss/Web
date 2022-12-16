@@ -49,6 +49,19 @@
                             echo ' class="nav__link"';
                     ?>><?php echo $name;?></a>
 
+                    <a href="<?php
+                        $name='Обратная связь';
+                        $link='feedback.php';
+                        $is_button = false;
+                        
+                        echo $link;
+                    ?>"<?php
+                        if ($is_button)
+                            echo ' class="login_button"';
+                        else
+                            echo ' class="nav__link"';
+                    ?>><?php echo $name;?></a>
+
                     <!-- <a class="nav__link" href="index.php">Главная</a>
                     <a class="nav__link" href="#">Контакты</a>
                     <a class="nav__link" href="feedback.php">Обратная связь</a> -->
