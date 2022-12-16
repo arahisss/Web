@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 
-    background-color: rgb(133, 124, 115);
+    background-color: rgb(160, 163, 166);
     font-size: 15px;
     line-height: 1.6;
     color: #fff;
@@ -46,6 +46,11 @@ h2 {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
+}
+
+.header__logo img {
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -133,7 +138,8 @@ footer .nav__link {
 .form-block {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 50px;
     margin-top: 70px;
 }
 
@@ -169,12 +175,26 @@ textarea {
 
 #button-submit {
     background-color: rgb(222, 216, 208);
-    width: 100px;
+    width: 130px;
     outline: none;
+    font-size: 16px;
     text-decoration: none;
-    border: 2px solid rgb(45, 84, 57);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     
+}
+
+.fill_again {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    background-color: rgb(222, 216, 208);
+    width: 130px;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+
 }
 
 

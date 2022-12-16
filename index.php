@@ -1,44 +1,57 @@
-<?php require("blocks/header.php"); ?>
-    
-    <main>
-        <div class="content">
-            <div class="text">
-                <h1>Природа</h1>
-                <h2>Природа выдержит самый тщательный осмотр.
-                    Она предлагает нам взглянуть на ее самый маленький лист и взглянуть на ее равнину, как на насекомое.</h2>
+<?php require("blocks/header.html"); ?>
 
-                <h2>Наши цели:</h2>
-                <il>
-                    <?php
-                        $array = array('Показать красоту', 'Показать важность', 'Привлечь внимание к глобальным проблемам');
-                        
-                        foreach ($array as $i) {
-                            echo '<li>'.$i.'</li>';
-                        }
-                    ?>
-                    <!-- <li>Показать красоту</li>
-                    <li>Показать важность</li>
-                    <li id="last">Привлечь внимание к глобальным проблемам</li> -->
 
-                </il>
-                <p class="learn_more-p">
-                    <a class="learn_more" href="#">Узнать больше</a>
-                </p>
+            <div class="form-block">
+                <form action="home.php" class="form" method="post" >
+                    <h1>Обратная связь</h1>
+
+                    <label for="lastname">ФИО</label>
+                    <input value="<?php if (isset($_GET['N'])) echo $_GET['N']; ?>" type="text" name="name">
+
+
+                    <label>Email</label>
+                    <input placeholder="email@mail.ru" type="email" name="email" value="<?php if (isset($_GET['E'])) echo $_GET['E']; ?>">
+
+                    <b>Сообщение</b>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    
+                    <p>
+                        <b>Тема обращения</b><br>
+                        <select name="category" id="">
+                            <option value="complaint">Жалоба</option>
+                            <option selected value="propose">Предложение</option>
+                        </select>
+                    </p>
+
+                    <div>
+                        <input type="checkbox">
+                        <label>Даю согласие на обработку персональных данных</label>
+                    </div>
+
+                    <p>
+                        <b>Откуда о нас узнали</b><br>
+
+                        <input type="radio" name="source" value="1" <?php if (isset($_GET['S']) & $_GET['S'] == '1') {
+                            echo 'checked';}?>>Реклама из интернета<br>
+
+                        <input type="radio" name="source" value="2" <?php if (isset($_GET['S']) & $_GET['S'] == '2') {
+                            echo 'checked';
+                        } ?>>Рассказали друзья<br>
+                    </p>
+
+                    <p>
+                        <input type="file" name="file-input" multiple>
+                    </p>
+
                 
-            </div>
-            <div>
-                <?php 
-                    if(date('s') % 2 === 0)
-                        $name='1'; 
-                    else
-                        $name='2';
+                    <div class="but">
+                        <input type="submit" name="" id="button-submit">
+                    </div>
 
-                    echo '<img id="img_nature" src="img/img_'.$name.'.jpg" alt="Меняющаяся фотография">';    
-                ?>
-                
-            </div>
-        </div>
-        
-    </main>
+                   
+                    
 
-<?php require("blocks/footer.php") ?>
+                </form>
+            </div>
+      
+<?php require("blocks/footer.php") ?>            
