@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    background-color: rgb(177, 181, 182);
+    min-height: 70px;
+    font-size: 30px;
+    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+#main_menu {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#main_menu a{
+    margin-right: 30px;
+}
+
+#main_menu span{
+    margin-right: 70px;
+}
+
+.selected {
+    color: rgb(55, 60, 190);
+}
+
+main {
+    flex: 1;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#product_menu {
+    display: inline-block;
+    width: 320px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 50px;
+    vertical-align: middle;
+}
+
+#product_menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.exmple {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bvRow {
+    background-color: rgb(184, 241, 209);
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 24px;
+    margin-left: 10px;
+    line-height: 150%;
+    padding: 20px 10px;
+}
+
+.bvSingleRow {
+    background-color: rgb(184, 241, 209);
+    border: 1px solid #000;
+    font-size: 30px;
+    padding: 20px 30px;
+    line-height: 150%;
+    margin-left: 300px;
+}
+
+.tvRow {
+    border-collapse: collapse;
+    background-color: rgb(202, 225, 240);
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 22px;
+    
+}
+
+.tvSingleRow {
+    background-color: rgb(202, 225, 240);
+    border-collapse: collapse;
+    padding: 10px;
+    line-height: 150%;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 200px;
+    margin-left: 300px;
+    
+}
+
+td {
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+tr {
+    border: 1px solid #000;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: rgb(177, 181, 182);
+    min-height: 90px;
+    font-size: 20px;
+}
+
+.left{
+    color: rgb(0, 0, 0);
+    float: left;
+    padding: 10px 30px;
+}
