@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/styles.css">
+    
+    <title>Аверкова Карина 211-361 ЛР № 7</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <header class="header">
+                <a class="header__logo" href="index.php">Lab7</a>
+
+                <nav class="nav">
+                    
+                    <a class="nav__link" href="index.php">Главная</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="#">Обратная связь</a>
+                    <a class="login-button" href="auth.php">Войти</a>
+                    
+                </nav>
+            </header>
+        <main>
+            <div class="calc-container">
+                <div class="screen" id="screen">
+                    <textarea id="out_screen" rows="5" cols="33" wrap="soft" onclick="paste()" disabled></textarea>
+                    <span></span>
+                    </div>
+                    <div class="buttons" id="buttons">
+                        <div class="digits" id="digits">
+                                <button class="key_digit" id="d_1" value="1">1</button>
+                                <button class="key_digit" id="d_2" value="2">2</button>
+                                <button class="key_digit" id="d_3" value="3">3</button>
+                                <button class="key_digit" id="d_4" value="4">4</button>
+                                <button class="key_digit" id="d_5" value="5">5</button>
+                                <button class="key_digit" id="d_6" value="6">6</button>
+                                <button class="key_digit" id="d_7" value="7">7</button>
+                                <button class="key_digit" id="d_8" value="8">8</button>
+                                <button class="key_digit" id="d_9" value="9">9</button>
+                                <button class="key_digit" id="d_c" value=".">.</button>
+                                <button class="key_digit" id="d_0" value="0">0</button>
+                                <button class="key_clear_2" id="b_c_one" value="CE">CE</button>
+
+                                <!-- <button class="key" style="visibility: hidden;" id="b_hidden" value=""></button> -->
+                            </div>
+                            <div class="other" id="other" >
+                                <button class="key_operation" id="o_a" value="+">+</button>
+                                <button class="key_clear_1" id="b_c_all" value="C">C</button>
+                                <button class="key_bracket" id="b_l" value="(">(</button>
+                                <button class="key_bracket" id="b_r" value=")">)</button>
+                                <button class="key_operation" id="o_d" value="/">/</button>
+                                <button class="key_operation" id="o_m" value="*">*</button>
+                                <button class="key_operation" id="o_s" value="-">-</button>
+                                <button class="key_result" id="bt_r" value="=">=</button>
+                            </div>
+                    </div>
+            </div>
+        </main>
+
+        <footer class="footer"> 
+            <nav class="nav">
+                <a class="nav__link" href="#">Главная</a>
+                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="feedback.html">Обратная связь</a>
+            </nav>
+        </footer>
+    </div>
+</section>
+<script src="static/main.js" ></script>
+
+</body>
+</html>

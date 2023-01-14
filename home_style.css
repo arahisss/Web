@@ -1,0 +1,111 @@
+.body{
+    margin: 0;
+  }
+  
+  
+  .body2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    height: 510px;
+    /*width: 100%;*/
+    background-image: url(background.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .nav:hover, .autorization:hover, .nav-item:hover{
+    color: Peru;
+  }
+  
+  .container{
+    margin: 0px 45px;
+  }
+  
+  .header{
+    background-color: white;
+  }
+  
+  .h{
+    color: black;
+    margin-right: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  .nav-item{
+    color: black;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  .autorization{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 36%;
+  }
+  
+  .header-line{
+    display: flex;
+    align-items: center;
+  }
+    
+    
+    .container2 {
+      width: 100%;
+      max-width: 500px;
+      padding: 0 20px;
+      margin-top: 5px;
+    }
+    
+    .content {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content2 {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    form{
+      margin-bottom: 10px;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    .footer{
+      background-color: white
+  }
+  
+  .foot{
+      margin-left: 50px;
+      color: black;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 10pt;
+  }
+  
+  .nav{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10pt;
+    margin-left: 50%;
+  }
+    

@@ -1,0 +1,215 @@
+.body{
+    margin: 0;
+}
+
+.container{
+    margin: 0px 45px;
+}
+
+.header{
+    background-color: white;
+}
+
+.header-line{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    margin-right: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav-item{
+    color: black;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10pt;
+    margin-left: 50%;
+}
+
+.autorization{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 26%;
+}
+
+.nav:hover, .autorization:hover, .nav-item:hover{
+    color: Peru;
+}
+
+.header-down{
+    height: 510px;
+    background-size: 100%;    
+    background-image: url(background.jpg);
+}
+
+.person{
+    position: absolute;
+    top: 55%;
+    left: 32%;
+}
+
+.footer{
+    background-color: white
+}
+
+.foot{
+    margin-left: 50px;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10pt;
+}
+
+.table{
+    /*position: absolute;
+    top: 17%;*/
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 11pt;
+}
+
+.spisok{
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12pt;
+    background-color: white;
+    box-shadow: 1px 1px 3px #777;
+}
+
+caption{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 13pt;
+}
+
+.elements {
+    background-image: url(bg_1.jpg);
+    height: 88vh;
+    background-repeat: round;
+    background-size: 30%;
+    margin-bottom: -45px;
+}
+.calc-pic {
+    position: absolute;
+    top: 95px;
+    left: 520px;
+    z-index: -0.9;
+}
+
+#out_screen {
+    position: absolute;
+    top: 140px;
+    left: 556px;
+    width: 250px;
+    height: 80px;
+    opacity: 70%;
+}
+
+.key_bracket, .key_clear_1, .key_clear_2, 
+.key_operation, .key_digit, .key_result {
+    cursor: pointer;
+    color: #6600CC;
+    width: 52px;
+    height: 44px;
+    position: absolute;
+    z-index: 1;
+}
+
+#b_c_all {
+    top: 250px;
+    left: 556px;
+}
+#b_l {
+    top: 250px;
+    left: 624px;
+}
+#b_r {
+    top: 250px;
+    left: 692px;
+}
+#o_d {
+    top: 250px;
+    left: 760px;
+}
+#d_7 {
+    top: 310px;
+    left: 556px;
+}
+#d_8 {
+    top: 310px;
+    left: 624px;
+}
+#d_9 {
+    top: 310px;
+    left: 692px;
+}
+#o_m {
+    top: 310px;
+    left: 760px;
+}
+#d_4 {
+    top: 370px;
+    left: 556px;
+}
+#d_5 {
+    top: 370px;
+    left: 624px;
+}
+#d_6 {
+    top: 370px;
+    left: 692px;
+}
+#o_s {
+    top: 370px;
+    left: 760px;
+}
+#d_1 {
+    top: 430px;
+    left: 556px;
+}
+#d_2 {
+    top: 430px;
+    left: 624px;
+}
+#d_3 {
+    top: 430px;
+    left: 692px;
+}
+#d_c {
+    top: 490px;
+    left: 556px;
+}
+#d_0 {
+    top: 490px;
+    left: 624px;
+}
+#o_a {
+    top: 430px;
+    left: 760px;
+}
+#bt_r {
+    width: 120px;
+    height: 44px;
+    top: 490px;
+    left: 692px;
+}
+#b_c_one {
+    width: 256px;
+    height: 29px;
+    position: absolute;
+    top: 550px;
+    left: 556px;
+}
+
